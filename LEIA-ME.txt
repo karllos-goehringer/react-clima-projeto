@@ -1,0 +1,3 @@
+Olá esse é o primeiro prototipo de uma aplicação que tem como objetivo mostrar diversas formas de exibir previsões do tempo.
+API UTLIZADA -- https://openweathermap.org/
+ICON SEARCHER UTILIZADO -- https://react-icons.github.io/react-icons/

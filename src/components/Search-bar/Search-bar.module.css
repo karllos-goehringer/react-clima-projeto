@@ -1,0 +1,45 @@
+.headersearch{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:1.5px gray solid ;
+  border-radius: 1vh;
+  width: 80%;
+  
+}
+.pesqCidade {
+  width: 80%;
+  padding: 1vh 0.1vw 1vh 0.1vw ;
+  border-radius: 1vh;
+  font-size: 16px;
+  background: #77CFF2;
+  box-shadow: 0 2px 5px rgba(136, 136, 136, 0.1);
+  transition: 0.3s ease-in-out;
+  outline: none;
+  border:none;
+}
+
+.pesqCidade::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+.boxsearch{
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  padding-top: 1vh;
+}
+a{
+    color: inherit; 
+    text-decoration: none; 
+}
+a:hover{
+    cursor:pointer;
+}
+.pesqPais{
+  width: 15%;
+  background: #77CFF2;
+  outline: none;
+  border:none;
+  text-align: center;
+}

@@ -1,0 +1,37 @@
+.nuvem {
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 30px 0 0 #fff, 60px 0 0 #fff;
+  animation: moverNuvem 25s linear infinite;
+}
+
+/* Se quiser variar altura e velocidade, crie mais classes e combine: */
+
+.nuvem1 {
+  top: 50px;
+  animation-duration: 20s;
+}
+
+.nuvem2 {
+  top: 120px;
+  animation-duration: 30s;
+  animation-delay: 5s;
+}
+
+.nuvem3 {
+  top: 180px;
+  animation-duration: 40s;
+  animation-delay: 10s;
+}
+
+@keyframes moverNuvem {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 100vw;
+  }
+}
