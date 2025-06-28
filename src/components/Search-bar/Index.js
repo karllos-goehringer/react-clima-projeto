@@ -10,18 +10,21 @@ export default function Searchbar(onSearch) {
         <input
         type="text"
         className={estilo.pesqPais}
-        placeholder="Código do país (ex: br, us, fr)"
+        placeholder="Cód do Pais"
         id="pais"
         maxLength={2}
         style={{ textTransform: 'touppercase' }}
       />
-        <RiMapPin2Line fontSize={25} />
+        <RiMapPin2Line size={30} />
         <input type='text' className={estilo.pesqCidade} placeholder='Pequise uma cidade...' id="cidade">
         </input>
         <a
           onClick={async () => {
             try {
+          
               const resultado = await fun.requestAPI();
+
+              
               if (resultado) {
                 onSearch.onSearch(resultado); // ← envia os dados pro App
               }
@@ -31,7 +34,7 @@ export default function Searchbar(onSearch) {
               fun.showAlert('Erro ao buscar dados do clima.');
             }
           }}
-        ><HiOutlineSearch fontSize={25} />
+        ><HiOutlineSearch size={25} />
         </a>
       </div>
     </div>

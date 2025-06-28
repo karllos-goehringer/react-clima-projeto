@@ -2,25 +2,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border:1.5px gray solid ;
+  width: 95%;
+  box-shadow: 0 2px 5px rgba(136, 136, 136, 0.1);
   border-radius: 1vh;
-  width: 80%;
-  
+  border: gray solid 1px;
+  padding: 0.3rem;
 }
 .pesqCidade {
   width: 80%;
-  padding: 1vh 0.1vw 1vh 0.1vw ;
-  border-radius: 1vh;
+  padding: 1.5vh 0.3vw 1.5vh 0.3vw ;
   font-size: 16px;
-  background: #77CFF2;
-  box-shadow: 0 2px 5px rgba(136, 136, 136, 0.1);
+  background: #ffffff;
   transition: 0.3s ease-in-out;
   outline: none;
   border:none;
 }
 
 .pesqCidade::placeholder {
-  color: #aaa;
+  color: rgb(148, 148, 148);
   font-style: italic;
 }
 .boxsearch{
@@ -37,9 +36,10 @@ a:hover{
     cursor:pointer;
 }
 .pesqPais{
-  width: 15%;
-  background: #77CFF2;
+  width: 30%;
+  background: #ffffff;
   outline: none;
   border:none;
   text-align: center;
+  font-size: 12;
 }

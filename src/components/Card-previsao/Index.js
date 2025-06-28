@@ -17,13 +17,18 @@ export default function ClimaCard(props) {
                     </p>
                     <p className='description'>{props.dados.description}</p>
                 </div>
-                <div className="weather-details">
-                    <div><FaTemperatureArrowUp color='#F03A4C' fontSize={20} /><strong>Máxima:</strong> {props.dados.tempMax.toFixed(1).toString().replace('.', ',')}<sup>°C</sup></div>
-                    <div><FaTemperatureArrowDown color='#55B3D9' fontSize={20}/><strong>Mínima:</strong> {props.dados.tempMin.toFixed(1).toString().replace('.', ',')} <sup>°C</sup></div>
-                    <div><FaWind fontSize={20} /><strong>Vento:</strong> {props.dados.windSpeed} km/h</div>
-                    <div><IoWaterSharp  fontSize={20} color='#0FB2F2'/><strong>Umidade:</strong> {props.dados.humidity}%</div>
+                <div className={estilos.wheaterdetails}>
+                        <div className={estilos.bloco1}>
+                            <div><FaTemperatureArrowUp color='#F03A4C' fontSize={20} /><strong>Máxima:</strong> {props.dados.tempMax.toFixed(1).toString().replace('.', ',')}<sup>°C</sup></div>
+                            <div><IoWaterSharp  fontSize={20} color='#0FB2F2'/><strong>Umidade:</strong> {props.dados.humidity}%</div>
+
+                        </div>
+                        <div className={estilos.bloco2}>
+                        <div><FaTemperatureArrowDown color='#55B3D9' fontSize={20}/><strong>Mínima:</strong> {props.dados.tempMin.toFixed(1).toString().replace('.', ',')} <sup>°C</sup></div>
+                        <div><FaWind fontSize={20} /><strong>Vento:</strong> {props.dados.windSpeed} km/h</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
         )
     }
 }

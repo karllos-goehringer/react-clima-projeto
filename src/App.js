@@ -6,7 +6,6 @@ import Searchbar from './components/Search-bar/Index';
 import * as fun from './components/Search-bar/Funtions-API';
 import ClimaCard from './components/Card-previsao/Index';
 import { useState } from 'react';
-import Nuvem from './components/Nuvem/Index';
 function App() {
   const [dados, setDados] = useState(null); 
   return (
@@ -18,7 +17,6 @@ function App() {
           <ClimaCard dados={dados}/>
           <a id='alert'></a>
           </div>
-          <Nuvem />
         </div>  
       </main >
     </div >

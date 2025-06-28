@@ -8,7 +8,8 @@ export function showAlert(msg) {
 }
 export async function requestAPI() {
     const cidade = document.getElementById('cidade').value
-    const pais = document.getElementById('pais').value
+    var pais = document.getElementById('pais').value
+    
     const apiKey = '8a60b2de14f7a17c7a11706b2cfcd87c';
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(cidade)},${encodeURI(pais)}&appid=${apiKey}&units=metric&lang=pt_br`
     if (!cidade) {
